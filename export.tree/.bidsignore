@@ -1,0 +1,7 @@
+phenotype/
+sub-*/beh/*eyetrack.*
+sub-*/beh/
+task-StopSignal_beh.json
+task-antisaccade_events.json
+task-axcpt_beh.json
+task-flanker_beh.json
