@@ -1,11 +1,38 @@
 {
   "participant_id": {
     "LongName": "Participant Identifier",
-    "Description": "Unique BIDS identifier for the participant in this study."
+    "Description": "Unique BIDS identifier for the participant in this study.",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": "Participant ID"
+      },
+      "VariableType": "Identifier"
+    }
   },
   "age": {
     "LongName": "age",
-    "Description": "Age in years."
+    "Description": "Age in years.",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": "Age"
+      },
+      "VariableType": "Continuous",
+      "Format": {
+        "TermURL": "nb:FromFloat",
+        "Label": "float"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "sex": {
     "LongName": "sex",
@@ -13,6 +40,24 @@
     "Levels": {
       "F": "Female",
       "M": "Male"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": "Sex"
+      },
+      "VariableType": "Categorical",
+      "Levels": {
+        "F": {
+          "TermURL": "snomed:248152002",
+          "Label": "Female"
+        },
+        "M": {
+          "TermURL": "snomed:248153007",
+          "Label": "Male"
+        }
+      },
+      "MissingValues": []
     }
   },
   "race": {
@@ -54,12 +99,12 @@
     "LongName": "household's gross income",
     "Description": "What is the total amount of income received by ALL members of your household (including pensions, allowances, and investments)? per year ",
     "Levels": {
-    "0": "no response",
-    "1": "Under $40000",
-    "2": "$40000 - $89999",
-    "3": "$90000 - $179999",
-    "4": "Over $180000",
-    "99": "Don't know"
+      "0": "no response",
+      "1": "Under $40000",
+      "2": "$40000 - $89999",
+      "3": "$90000 - $179999",
+      "4": "Over $180000",
+      "99": "Don't know"
     }
   },
   "clinical_scores": {
